@@ -1,0 +1,86 @@
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #f5f4fa;
+}
+
+.list-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-team__item {
+    background-color: white;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+
+
+.list-team__title-name {
+    font-family: $font;
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.list-team__job {
+    font-family: inherit;
+    color: $p-color;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.massage-list {
+    justify-content: center;
+    display: flex;
+}
+.massage-list__items:not(:last-child){
+    margin-right: 10px;
+
+}
+
+.massage-list__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $link-color-hov;
+    }
+
+}
+
+
+
+
+.massage-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .massage-list__link:hover &,
+    .massage-list__link:focus & {
+        fill: white;
+    }
+
+}

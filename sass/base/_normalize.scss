@@ -1,0 +1,58 @@
+@import "../utils/variables";
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    box-sizing: border-box;
+    font-family: $font;
+    background: #ffffff;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    @media screen and (max-width:900px) {
+        width:900px;
+        
+    }
+}

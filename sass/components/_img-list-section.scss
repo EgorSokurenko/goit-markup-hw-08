@@ -1,0 +1,27 @@
+@import "../utils/variables";
+
+.list-img-section {
+    padding-bottom: 94px;
+}
+
+.list-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-img__card-img {
+    position: relative;
+}
+
+.list-img__desc {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 27px 0px 27px 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    margin: 0;
+}
