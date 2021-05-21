@@ -2,6 +2,9 @@
 
 .list-img-section {
     padding-bottom: 94px;
+    @media screen and(max-width:767px){
+        display: none;
+    }
 }
 
 .list-img {

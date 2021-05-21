@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
     crossorigin="anonymous" />
@@ -45,7 +46,7 @@
             info@devstudio.com
           </a>
         </li>
-        <li class="con-list__item">
+        <li class="con-list__item con-list__item--right-magrin">
           <a class="link con-list__link" href="tel:+380961111111">
             <svg class="con-list__icon" width="10" height="16">
               <use href="./img/icons/icons.svg#icon-smartphone"></use>
@@ -58,10 +59,10 @@
     </div>
   </header>
   <main>
-    <section class="hero-section hero-section--fon">
+    <section class="hero-section  hero-section--fon">
       <div class="container">
         <h1 class="hero-section__main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-section__order-but" type="button" data-modal-open>Заказать услугу</button>
+        <button class="hero-section__order-but" typeclass="list-team__img"="button" data-modal-open>Заказать услугу</button>
         
     </section>
     <section class="about-section">
@@ -135,7 +136,7 @@
         <h2 class="title-section">Наша команда</h2>
         <ul class="list-team list-no ">
           <li class="list-team__item">
-            <img src="img/team/img.jpg" alt="Ігарь" width="270" height="260" />
+            <img class="list-team__img"src="img/team/img.jpg" alt="Ігарь" width="270" height="260" />
             <h4 class="list-team__title-name">Игорь Демьяненко</h4>
             <p class="list-team__job">Product Designer</p>
 
@@ -171,7 +172,7 @@
             </ul>
           </li>
           <li class="list-team__item">
-            <img src="img/team/img-1.jpg" alt="Ольга" width="270" height="260" />
+            <img class="list-team__img"src="img/team/img-1.jpg" alt="Ольга" width="270" height="260" />
             <h4 class="list-team__title-name">Ольга Репина</h4>
             <p class="list-team__job">Frontend Developer</p>
             <ul class="massage-list list-no">
@@ -206,7 +207,7 @@
             </ul>
           </li>
           <li class="list-team__item">
-            <img src="img/team/img-2.jpg" alt="Коля" width="270" height="260" />
+            <img class="list-team__img"src="img/team/img-2.jpg" alt="Коля" width="270" height="260" />
             <h4 class="list-team__title-name">Николай Тарасов</h4>
             <p class="list-team__job">Marketing</p>
            <ul class="massage-list list-no">
@@ -241,7 +242,7 @@
             </ul>
           </li>
           <li class="list-team__item">
-            <img src="img/team/img-3.jpg" alt="Міша" width="270" height="260" />
+            <img class="list-team__img"src="img/team/img-3.jpg" alt="Міша" width="270" height="260" />
             <h4 class="list-team__title-name">Михаил Ермаков</h4>
             <p class="list-team__job">UI Designer</p>
            <ul class="massage-list list-no">
@@ -331,19 +332,19 @@
     <div class="container content-foot">
       <!-- Адрес и контакты в футере -->
       <div class='info-footer'>
-        <a href="./" class="link info-footer__logo">
+        <a href="./" class="info-footer__logo">
           <span class="logo-span ">Web</span><span class="white-span">Studio</span>
         </a>
         <address class="address">
           <a href="https://goo.gl/maps/hZhFV1fXpXnWWx7i7" class="address__street link" target="_blank">г. Киев, пр-т Леси
             Украинки, 26</a>
         <ul class="con-list con-list--no-flex ">
-          <li class="con-list__item con-list__item--margin">
+          <li class="con-list__item con-list__item--margin  con-list__item--look">
             <a class="link con-list__link" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
           </li>
-          <li class="con-list__item con-list__item--margin">
+          <li class="con-list__item con-list__item--margin  con-list__item--look">
             <a class="link con-list__link" href="tel:+380961111111">
               
               +38 096 111 11 11
@@ -385,7 +386,7 @@
               </li>
             </ul>
       </div>
-      <div>
+      <div class="form-block">
         <h3 class="sn-footer__title">Подпишитесь на рассылку</h3>
         <form class="footer-form">
           <input type="email" class="footer-form__input" placeholder="E-mail" autocomplete="email">

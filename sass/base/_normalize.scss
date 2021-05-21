@@ -48,11 +48,34 @@ button {
     cursor: pointer;
 }
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 15px;
-    @media screen and (max-width:900px) {
-        width:900px;
+    @media screen and (min-width:480px) {
+        width: 480px;
         
+    }
+    @media screen and (min-width:768px){
+        width:768px;
+        
+    }
+    @media screen and(min-width:1200px) {
+        width: 1200px;
+        
+    }
+    
+}
+.title-section {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    @media screen and (min-width:1200px){
+         font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
     }
 }
