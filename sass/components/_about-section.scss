@@ -13,12 +13,28 @@
 .about-list {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 767px) and (max-width:1199px){
+        margin: -15px;
+    }
+    @media screen and (min-width:1200px){
+        flex-wrap:nowrap;
+    }
 }
 
 
 
 .about-list__item {
-    width: 100%;
+    @media screen and (max-width:767px){
+       width: 100%; 
+    }
+    @media screen and (min-width: 768px){
+        margin: 15px;
+        width:354px;
+    }
+    @media screen and (min-width: 1200px){
+        margin: 15px;
+        width: 270px;
+    }
     &:not(:last-child){
       margin-bottom:30px;  
     }

@@ -17,42 +17,77 @@
     <header class="header">
       <div class="container">
         <!-- Navigations -->
-        <nav class="navig">
-          <a href="./" class="navig-logo link">
-            <span class="logo-span">Web</span>Studio</a
-          >
-          <ul class="menu list-no">
-            <li class="menu__item">
-              <a class="menu__link link" href="../index.html">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link line-bottom-link" href="">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="con-list list-no">
-          <li class="con-list__item">
-            <a class="link con-list__link" href="mailto:info@devstudio.com">
-              <svg class="con-list__icon" width="16" height="12">
-                <use href="../img/icons/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="con-list__item">
-            <a class="link con-list__link" href="tel:+380961111111">
-              <svg class="con-list__icon" width="10" height="16">
-                <use href="../img/icons/icons.svg#icon-smartphone"></use>
-              </svg>
+        <a href="./" class="navig-logo link">
+          <span class="logo-span">Web</span>Studio</a
+        >
+        <div class="menu-container" data-menu>
+          <nav class="navig">
+            <ul class="menu list-no">
+              <li class="menu__item">
+                <a class="menu__link link line-bottom-link" href="./index.html"
+                  >Студия</a
+                >
+              </li>
 
-              +38 096 111 11 11
-            </a>
-            <!-- </li> -->
-          </li>
-        </ul>
+              <li class="menu__item">
+                <a class="menu__link link" href="./">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cont-block">
+            <ul class="con-list list-no">
+              <li class="con-list__item">
+                <a class="con-list__link" href="mailto:info@devstudio.com">
+                  <svg class="con-list__icon" width="16" height="12">
+                    <use href="./img/icons/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="con-list__item con-list__item--right-magrin">
+                <a class="link con-list__link" href="tel:+380961111111">
+                  <svg class="con-list__icon" width="10" height="16">
+                    <use href="./img/icons/icons.svg#icon-smartphone"></use>
+                  </svg>
+
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="sn-list">
+              <li class="sn-list__item">
+                <a href="#" class="sn-list__link">Instagram</a>
+              </li>
+              <li class="sn-list__item">
+                <a href="#" class="sn-list__link">Twitter</a>
+              </li>
+              <li class="sn-list__item">
+                <a href="#" class="sn-list__link">Facebook</a>
+              </li>
+              <li class="sn-list__item">
+                <a href="#" class="sn-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="burger-but" type="button" data-menu-button>
+          <svg
+            class="burger-but__svg"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="burger-but__icon-menu"
+              href="./img/icons/icons.svg#burger"
+            ></use>
+            <use
+              class="burger-but__icon-cross"
+              href="./img/icons/icons.svg#cross-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -263,7 +298,7 @@
       <div class="container content-foot">
         <!-- Адрес и контакты в футере -->
         <div class="info-footer">
-          <a href="./" class="link info-footer__logo">
+          <a href="./" class="info-footer__logo">
             <span class="logo-span">Web</span
             ><span class="white-span">Studio</span>
           </a>
@@ -275,13 +310,24 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
             <ul class="con-list con-list--no-flex">
-              <li class="con-list__item con-list__item--margin">
-                <a class="link con-list__link" href="mailto:info@devstudio.com">
+              <li
+                class="
+                  con-list__item con-list__item--margin con-list__item--look
+                "
+              >
+                <a
+                  class="link con-list__link-footer"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com
                 </a>
               </li>
-              <li class="con-list__item con-list__item--margin">
-                <a class="link con-list__link" href="tel:+380961111111">
+              <li
+                class="
+                  con-list__item con-list__item--margin con-list__item--look
+                "
+              >
+                <a class="link con-list__link-footer" href="tel:+380961111111">
                   +38 096 111 11 11
                 </a>
               </li>
@@ -297,7 +343,7 @@
                   class="massage-list__icon massage-list__icon--fill"
                   width="40"
                 >
-                  <use href="../img/icons/icons.svg#icon-instagram"></use>
+                  <use href="./img/icons/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -307,7 +353,7 @@
                   class="massage-list__icon massage-list__icon--fill"
                   width="40"
                 >
-                  <use href="../img/icons/icons.svg#icon-twitter"></use>
+                  <use href="./img/icons/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -317,7 +363,7 @@
                   class="massage-list__icon massage-list__icon--fill"
                   width="40"
                 >
-                  <use href="../img/icons/icons.svg#icon-facebook"></use>
+                  <use href="./img/icons/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -327,13 +373,13 @@
                   class="massage-list__icon massage-list__icon--fill"
                   width="40"
                 >
-                  <use href="../img/icons/icons.svg#icon-linkedin"></use>
+                  <use href="./img/icons/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="form-block">
           <h3 class="sn-footer__title">Подпишитесь на рассылку</h3>
           <form class="footer-form">
             <input
@@ -345,7 +391,7 @@
             <button type="submit" class="footer-form__order-but">
               Подписаться
               <svg class="footer-form__icon">
-                <use href="../img/icons/icons.svg#teleg-icon"></use>
+                <use href="./img/icons/icons.svg#teleg-icon"></use>
               </svg>
             </button>
           </form>
@@ -353,4 +399,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/menu.js"></script>
 </html>
