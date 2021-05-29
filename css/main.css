@@ -1830,6 +1830,10 @@ button {
           transform: translateY(0%);
 }
 
+.project__des-block img {
+  width: 100%;
+}
+
 .project__dec {
   position: absolute;
   top: 50%;
