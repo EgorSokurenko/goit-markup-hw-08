@@ -29,6 +29,7 @@
 }
 .menu-container{
     @media screen and (max-width:767px) {
+        z-index: 9;
         position: absolute;
         top: 0;
         left: 0;
@@ -223,6 +224,7 @@
 
 .sn-list{
     display:flex;
+    flex-wrap: wrap;
     @media screen and (min-width:768px) {
         display: none;
     }

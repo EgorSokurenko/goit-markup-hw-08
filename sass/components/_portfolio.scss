@@ -7,14 +7,22 @@
 
 .but-list {
   display: flex;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 30px auto;
   justify-content: center;
+  @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @media  screen and (min-width:1200px) {
+    margin-bottom: 50px;
+  }
+  
 }
 
 .but-list__but{
   @extend %button;
   margin-right: 8px;
-
+  
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   border: none;
@@ -28,29 +36,49 @@
   color: #fff;
   background-color: $link-color-hov;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-  
+  }
+  @media screen and (max-width:767px) {
+    margin-bottom: 15px;
+  }
 }
 
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  z-index: -10;
+  @media screen and (min-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
 }
 
 .project-list__item {
   border: 1px solid #eeeeee;
-  margin: 15px;
-  flex-basis: calc((100% - 90px) / 3);
   transition: box-shadow 1150ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
+   &:hover,
   &:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+  }
+  
+  
+  
+  @media screen and (max-width:767px){
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media  screen and (min-width:1200px) {
+    margin: 15px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+ 
 
 }
 
@@ -79,6 +107,7 @@
 
 
 .project__des-block {
+  z-index:-1;
   overflow: hidden;
   position: relative;
   &::before {
@@ -114,10 +143,14 @@
   letter-spacing: 0.03em;
   color: #fff;
   opacity: 1;
-  width: 322px;
+  width: 100%;
+  padding:77px 24px;
   .project:hover .project__des-block &,
   .project:focus .project__des-block & {
       transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width:479px){
+    font-size: 15px;
   }
 }
 

@@ -14,7 +14,49 @@
             url(../img/bg.jpg);
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+       @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+           background-image: linear-gradient(to top,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)),
+           url(../img/bg@2x.jpg);
+       }
+       @media screen and (max-width:1199px){
+           background-image: linear-gradient(to top,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)),
+           url(../img/bg-tablet.jpg);
+           background-size: cover;
+           background-position: center;
+           @media (min-device-pixel-ratio: 2),
+           (-webkit-min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+               background-image: linear-gradient(to top,
+                       rgba(47, 48, 58, 0.4),
+                       rgba(47, 48, 58, 0.4)),
+                   url(../img/bg-tablet@2x.jpg);
+           }
+       }
+       @media screen and (max-width:767px){
+           background-image: linear-gradient(to top,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)),
+           url(../img/bg-mobile.jpg);
+           background-size: cover;
+           background-position: center;
+           @media (min-device-pixel-ratio: 2),
+           (-webkit-min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+               background-image: linear-gradient(to top,
+                       rgba(47, 48, 58, 0.4),
+                       rgba(47, 48, 58, 0.4)),
+                   url(../img/bg-mobile@2x.jpg);
+           }
+       }
         margin: 0 auto;
         @media screen and (min-width:1200px){
         height: 600px;
@@ -37,7 +79,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto 30px auto;
-    width: 360px;
+    
+    @media screen and (min-width:480px){
+        width: 360px;
+    }
     @media screen and (min-width:1200px){
         width: 696px;
         font-size: 44px;
